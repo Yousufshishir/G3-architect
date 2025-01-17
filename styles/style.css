@@ -223,11 +223,76 @@ line-height: 26px;
     grid-template-columns: repeat(5,1fr);
     filter: grayscale(100%);
 }
+/* feature styles */
+#feature-section-title{
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left:  21px;
+    color: rgb(19, 19, 19);
+font-size: 2.81rem;
+font-weight: 700;
+line-height: 53px;
+}
+#section-description{
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.feature-title{
+    color: rgb(19, 19, 19);
+font-size: 1.25rem;
+font-weight: 600;
+/* line-height: 23px; */
+/* margin: 0px 0px; */
+margin-bottom: 10px;
+}
+
+.feature-description{
+    color: rgb(114, 114, 114);
+    margin: 0px 0px;
+font-size: 1rem;
+font-weight: 400;
+line-height: 26px;
+}
+
+.feature-card{
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);    
+    margin-bottom: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.features{
+    display: flex;
+gap: 140px;
+}
+
+
+
+
+#experience{
+    padding:45px 42px ;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: -109px;
+    margin-left: -92px;
+
+}
+
+#experience-year{
+    font-weight:700;
+    font-size:4rem; 
+}
+
+
+
 /* responsive media query */
 
 @media screen and (max-width:576px) {
     
-    .navbar,.nav-links,.teams{
+    .navbar,.nav-links,.teams,.features{
 flex-direction: column;
     }
     .team-image-container{
@@ -266,13 +331,21 @@ display: grid;
     justify-items: center;
     gap: 24px;
 }
+.apu img{
+    width: 100%;
+    }
 
+    #experience{
+        margin-top: 20px;
+    margin-left: 7px;
+
+    }
 }
 
 /* medium size device */
 
 @media screen and (min-width:576px) and (max-width:992px){
-    .teams{
+    .teams,.features{
         flex-direction: column;
     }
     .our-features{
@@ -288,5 +361,22 @@ margin: 50px auto;
     }
     .figma{
         grid-column: 2 / span 2;
-justify-self: center;    }
+justify-self: center;    
+}
+
+#experience{
+    margin-top: 20px;
+margin-left: 40px;
+}
+.apu2{
+display: flex;
+margin: 0 auto;
+
+}
+#experience{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
 }
